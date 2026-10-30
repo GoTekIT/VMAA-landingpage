@@ -10,7 +10,7 @@
 #main .takeaways.takeaways-interactive .takeaway-content{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:start}
 #main .takeaways.takeaways-interactive .takeaway-list{display:block;min-width:0;padding:0;border-top:1px solid var(--border)}
 #main .takeaways.takeaways-interactive .takeaway-item,
-#main .takeaways.takeaways-interactive .takeaway-item:last-child{position:relative;isolation:isolate;display:grid;grid-template-columns:30px minmax(0,1fr);gap:9px 20px;align-items:start;min-height:0;padding:24px 0 25px;border-bottom:1px solid var(--border);overflow:hidden;grid-column:auto;background:transparent;transition:background .3s}
+#main .takeaways.takeaways-interactive .takeaway-item:last-child{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr;gap:9px 0;align-items:start;min-height:0;padding:24px 0 25px;border-bottom:1px solid var(--border);overflow:hidden;grid-column:auto;background:transparent;transition:background .3s}
 #main .takeaways.takeaways-interactive .takeaway-number{position:relative;z-index:1;font-size:13px;line-height:1.8;letter-spacing:1px;color:#a79bc9;padding-top:5px;font-variant-numeric:tabular-nums;transition:color .3s}
 #main .takeaways.takeaways-interactive .takeaway-item h3{position:static;z-index:2;max-width:570px;margin:0;font-size:24px;font-weight:500;line-height:1.5;letter-spacing:-.3px}
 #main .takeaways.takeaways-interactive .takeaway-trigger{display:block;text-align:left;font:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;padding:0;border:0;background:none;border-radius:0;cursor:pointer}
@@ -18,7 +18,7 @@
 #main .takeaways.takeaways-interactive .takeaway-trigger:focus-visible{outline:0}
 #main .takeaways.takeaways-interactive .takeaway-item:has(.takeaway-trigger:focus-visible){outline:2px solid var(--lavender);outline-offset:-3px}
 #main .takeaways.takeaways-interactive .takeaway-item p,
-#main .takeaways.takeaways-interactive .takeaway-item:last-child p{position:relative;z-index:1;grid-column:2;max-width:570px;margin:0;font-size:16px;line-height:1.8;color:var(--muted);transition:color .3s}
+#main .takeaways.takeaways-interactive .takeaway-item:last-child p{position:relative;z-index:1;grid-column:1;max-width:570px;margin:0;font-size:16px;line-height:1.8;color:var(--muted);transition:color .3s}
 #main .takeaways.takeaways-interactive .takeaway-backdrop{display:none;position:absolute;z-index:0;inset:0;pointer-events:none;opacity:0;transform:translateX(12px) scale(1.02);transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.2,1);background:#111b35}
 #main .takeaways.takeaways-interactive .takeaway-backdrop img{position:absolute;right:0;top:0;width:75%;height:100%;object-fit:cover;object-position:70% 52%;opacity:.82;mask-image:linear-gradient(90deg,transparent 0,#000 35%,#000 94%,transparent);filter:saturate(.7)}
 #main .takeaways.takeaways-interactive .takeaway-backdrop:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#070d1e 0,#070d1ef0 32%,#070d1eae 57%,#070d1e45 100%)}
@@ -42,7 +42,7 @@
   #main .takeaways.takeaways-interactive .takeaway-introduction>p{font-size:15px}
   #main .takeaways.takeaways-interactive .takeaway-content{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px}
   #main .takeaways.takeaways-interactive .takeaway-item,
-  #main .takeaways.takeaways-interactive .takeaway-item:last-child{grid-template-columns:28px minmax(0,1fr);gap:9px 16px;padding:23px 0}
+  #main .takeaways.takeaways-interactive .takeaway-item:last-child{grid-template-columns:1fr;gap:9px 0;padding:23px 0}
   #main .takeaways.takeaways-interactive .takeaway-item h3{font-size:23px}
   #main .takeaways.takeaways-interactive .takeaway-item p{font-size:15px}
   #main .takeaways.takeaways-interactive .takeaway-preview{top:100px;height:440px}
@@ -62,10 +62,10 @@
   #main .takeaways.takeaways-interactive .takeaway-content{display:block}
   #main .takeaways.takeaways-interactive .takeaway-preview{display:none}
   #main .takeaways.takeaways-interactive .takeaway-item,
-  #main .takeaways.takeaways-interactive .takeaway-item:last-child{grid-template-columns:26px minmax(0,1fr);gap:12px 14px;min-height:0;padding:27px 4px 29px}
+  #main .takeaways.takeaways-interactive .takeaway-item:last-child{grid-template-columns:1fr;gap:10px 0;min-height:0;padding:27px 4px 29px}
   #main .takeaways.takeaways-interactive .takeaway-item h3{font-size:23px;line-height:1.55;max-width:none}
   #main .takeaways.takeaways-interactive .takeaway-item p,
-  #main .takeaways.takeaways-interactive .takeaway-item:last-child p{grid-column:2;margin:0;font-size:15px;line-height:1.85;max-width:none}
+  #main .takeaways.takeaways-interactive .takeaway-item:last-child p{grid-column:1;margin:0;font-size:15px;line-height:1.85;max-width:none}
   #main .takeaways.takeaways-interactive .takeaway-number{font-size:11px;padding-top:6px}
   #main .takeaways.takeaways-interactive .takeaway-backdrop{display:block}
   #main .takeaways.takeaways-interactive .takeaway-backdrop img{width:100%;object-position:70% center;opacity:.68}

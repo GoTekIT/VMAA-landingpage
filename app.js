@@ -82,7 +82,7 @@
         item.querySelector('.takeaway-trigger').setAttribute('aria-pressed',String(active));
       });
       takeawayPreviewImages.forEach((image,i) => image.classList.toggle('is-active',i === index));
-      $('.takeaway-preview-index').textContent = `${String(index+1).padStart(2,'0')} / ${String(takeawayItems.length).padStart(2,'0')}`;
+      if($('.takeaway-preview-index')) $('.takeaway-preview-index').textContent = `${String(index+1).padStart(2,'0')} / ${String(takeawayItems.length).padStart(2,'0')}`;
       $('.takeaway-preview-title').textContent = takeawayItems[index].querySelector('.takeaway-trigger').textContent.trim();
     };
     setTakeaway(takeawayItems[0]);
@@ -172,14 +172,16 @@
   dialog.addEventListener('close',() => { document.body.style.overflow = ''; previousFocus?.focus(); });
 
 
-  if(content.tickets.price !== null) { $('#ticket-price').textContent = new Intl.NumberFormat('vi-VN',{style:'currency',currency:content.tickets.currency}).format(content.tickets.price); $('#ticket-status').textContent = 'VÉ THAM DỰ'; }
+  if(content.tickets.price !== null) { $('#ticket-price').textContent = new Intl.NumberFormat('vi-VN',{style:'currency',currency:content.tickets.currency}).format(content.tickets.price); if($('#ticket-status')) $('#ticket-status').textContent = 'VÉ THAM DỰ'; }
   $('#ticket-note').textContent = content.tickets.note;
   if(content.event.venue) $('#venue-note').textContent = content.event.venue;
 
   if(content.speakers.length) {
     $('#speaker-pending').hidden = true;
-    $('#speaker-draft-notice').hidden = content.speakersStatus !== 'draft';
-    $('#speaker-count').textContent = `${content.speakers.length} hồ sơ`;
+    const draftNotice = $('#speaker-draft-notice');
+    if(draftNotice) draftNotice.hidden = content.speakersStatus !== 'draft';
+    const speakerCount = $('#speaker-count');
+    if(speakerCount) speakerCount.textContent = `${content.speakers.length} hồ sơ`;
     content.speakers.forEach((speaker, index) => {
       const card = document.createElement('article'); card.className = 'speaker-card';
       const image = safeImageUrl(speaker.image);
@@ -197,7 +199,7 @@
     $$('main section[id]').forEach(section => navObserver.observe(section));
     if(!matchMedia('(prefers-reduced-motion:reduce)').matches) {
       const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting) {entry.target.classList.add('visible'); revealObserver.unobserve(entry.target);} }),{threshold:0.06});
-      $$('.section-heading,.overview-layout,.speaker-pending,.topic-card,.audience-grid,.takeaway-layout,.partner-benefits,.registration-layout').forEach(el => {el.classList.add('reveal'); revealObserver.observe(el);});
+      $$('.section-heading,.overview-layout,.speaker-pending,.topic-card,.audience-grid,.takeaway-layout,.partner-benefits,.registration-layout,.corridor-header,.corridor-grid,.corridor-footer,.agenda-layout,.faq-layout,.deal-connect-content').forEach(el => {el.classList.add('reveal'); revealObserver.observe(el);});
     }
   }
 })();

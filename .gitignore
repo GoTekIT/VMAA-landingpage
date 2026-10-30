@@ -8,3 +8,5 @@ qa/
 *.zip
 *.tar.gz
 *.tgz
+
+~$*

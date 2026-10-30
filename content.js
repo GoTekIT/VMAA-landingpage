@@ -90,14 +90,16 @@ window.VMAA_CONTENT = {
   partners: [],
   tickets: { price: null, currency: 'VND', note: 'Giá vé và quyền lợi tham dự sẽ được Ban Tổ chức công bố.' },
   agenda: [
-    { start: '14:00', end: '14:20', kind: '', title: 'Ra mắt VMAA miền Trung – Khai mở hệ sinh thái M&A khu vực', detail: '', category: 'forum' },
-    { start: '14:20', end: '14:35', kind: '', title: 'Bản đồ dòng vốn và thương vụ Việt Nam 2026: Những cơ hội tiếp theo sẽ đến từ đâu?', detail: 'Diễn giả sẽ được công bố.', category: 'forum' },
-    { start: '14:35', end: '15:20', kind: 'Phiên thảo luận 1:', title: 'BẤT ĐỘNG SẢN MIỀN TRUNG: LÀM GÌ ĐỂ BỨT PHÁ THÀNH DOANH NGHIỆP DẪN ĐẦU?', detail: 'Người tham gia và người điều phối sẽ được công bố.', category: 'forum', featured: true },
-    { start: '15:20', end: '15:35', kind: '', title: 'Coffee Break - Nghỉ giữa giờ', detail: '', category: 'connect' },
-    { start: '15:35', end: '16:20', kind: 'Phiên thảo luận 2:', title: 'CHIẾN LƯỢC VỐN CHO TĂNG TRƯỞNG: CÔNG NGHỆ VÀ NHỮNG NGÀNH DẪN DẮT LÀN SÓNG ĐẦU TƯ MỚI', detail: 'Người tham gia và người điều phối sẽ được công bố.', category: 'forum', featured: true },
-    { start: '16:20', end: '16:40', kind: '', title: 'Điều gì làm nên một thương vụ M&A thành công?', detail: 'Diễn giả sẽ được công bố.', category: 'forum' },
-    { start: '16:40', end: '17:00', kind: '', title: 'Q&A: Hỏi đáp', detail: '', category: 'forum' },
-    { start: '17:00', end: '17:15', kind: '', title: 'Từ tiềm năng đến hành động VMAA Miền Trung', detail: '', category: 'forum' },
-    { start: '17:15', end: '17:30', kind: '', title: 'Deal Connect Session', detail: '', category: 'connect' }
+    { start: '13:30', end: '14:00', kind: '', title: 'Đón khách và Kết nối', detail: '', category: 'connect' },
+    { start: '14:00', end: '14:10', kind: '', title: 'Ra mắt VMAA miền Trung – Khai mở hệ sinh thái M&A khu vực', detail: '', category: 'forum' },
+    { start: '14:10', end: '14:30', kind: '', title: 'Bản đồ dòng vốn và thương vụ Việt Nam 2026: Những cơ hội tiếp theo sẽ đến từ đâu?', detail: '', category: 'forum' },
+    { start: '14:30', end: '15:15', kind: 'Phiên thảo luận 1:', title: 'BẤT ĐỘNG SẢN MIỀN TRUNG: LÀM GÌ ĐỂ BỨT PHÁ THÀNH DOANH NGHIỆP DẪN ĐẦU?', detail: '', category: 'forum', featured: true },
+    { start: '15:15', end: '15:30', kind: '', title: 'Coffee Break', detail: '', category: 'connect' },
+    { start: '15:30', end: '16:15', kind: 'Phiên thảo luận 2:', title: 'CHIẾN LƯỢC VỐN CHO TĂNG TRƯỞNG: CÔNG NGHỆ VÀ NHỮNG NGÀNH DẪN DẮT LÀN SÓNG ĐẦU TƯ MỚI', detail: '', category: 'forum', featured: true },
+    { start: '16:15', end: '16:35', kind: '', title: 'Điều gì làm nên một thương vụ M&A thành công?', detail: '', category: 'forum' },
+    { start: '16:35', end: '16:55', kind: '', title: 'Q&A', detail: '', category: 'forum' },
+    { start: '16:55', end: '17:10', kind: '', title: 'Từ tiềm năng đến hành động VMAA Miền Trung', detail: '', category: 'forum' },
+    { start: '17:10', end: '17:25', kind: '', title: 'Deal Connect Session', detail: '', category: 'connect' },
+    { start: '18:00', end: '21:00', kind: 'Gala Dinner', title: 'Tiệc ra mắt và Kết nối cộng đồng M&A miền Trung', detail: '', category: 'connect' }
   ]
 };
