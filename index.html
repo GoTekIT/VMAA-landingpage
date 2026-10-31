@@ -20,6 +20,10 @@
   <link rel="preload" as="font" type="font/woff2" href="assets/plus-jakarta-sans-latin-wght-normal.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="assets/outfit-latin-wght-normal.woff2" crossorigin>
   <link rel="preload" as="image" href="assets/key-visual.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
   <script>
     (() => {
       try {
@@ -32,7 +36,7 @@
     })();
   </script>
   <link rel="stylesheet" href="styles.css?v=intro-one-turn-500ms">
-  <link rel="stylesheet" href="sections.css?v=partners-reorder-v1">
+  <link rel="stylesheet" href="sections.css?v=audience-centered-v17">
   <link rel="stylesheet" href="hero-v2.css?v=keyvisual-ma-crisper">
   <link rel="stylesheet" href="takeaways.css?v=inline-num-v1">
   <script src="content.js?v=20261030-agenda-clean" defer></script>
@@ -109,8 +113,22 @@
     <section class="content-section overview section-pad" id="tong-quan" aria-labelledby="overview-title">
       <div class="wrap">
         <div class="overview-layout overview-scene" id="scene">
-          <div class="delegate-number"><span>300<span class="plus">+</span></span><h2 id="overview-title">ĐẠI BIỂU</h2><p>Doanh nghiệp · Nhà đầu tư · Tổ chức tài chính · Chuyên gia M&A</p></div>
-          <div class="overview-copy"><p>Diễn đàn kết nối doanh nghiệp, nhà đầu tư và các tổ chức chuyên môn, cùng khám phá cơ hội M&A, chiến lược huy động vốn và những động lực tăng trưởng mới tại Miền Trung.</p><div class="inline-actions"><a class="button button-primary" href="#tham-du">Đăng ký tham dự</a><a class="button button-outline" href="#doi-tac">Trở thành đối tác</a></div></div>
+          <div class="overview-lead-row">
+            <div class="delegate-number">
+              <span>300<span class="plus">+</span></span>
+            </div>
+            <div class="delegate-heading-group">
+              <span class="delegate-eyebrow">QUY MÔ THAM DỰ</span>
+              <h2 id="overview-title" class="delegate-title">ĐẠI BIỂU <span class="normal-amp">&amp;</span> NHÀ LÃNH ĐẠO</h2>
+            </div>
+          </div>
+          <div class="overview-copy">
+            <p>Diễn đàn kết nối doanh nghiệp, nhà đầu tư và các tổ chức chuyên môn, cùng khám phá cơ hội M<span class="normal-amp">&amp;</span>A, chiến lược huy động vốn và những động lực tăng trưởng mới tại Miền Trung.</p>
+            <div class="inline-actions">
+              <a class="button button-primary" href="#tham-du">Đăng ký tham dự</a>
+              <a class="button button-outline" href="#doi-tac">Trở thành đối tác</a>
+            </div>
+          </div>
         </div>
         <div class="countdown-bar" hidden><div class="countdown-heading"><span class="status-dot"></span><div><span class="micro">ĐẾM NGƯỢC THỜI GIAN ĐĂNG KÝ</span><p id="countdown-label">Hạn đăng ký sẽ được Ban Tổ chức công bố.</p></div></div><div class="countdown" id="registration-countdown" role="timer" aria-label="Thời gian còn lại đến hạn đăng ký" hidden><div><strong id="days">--</strong><span>NGÀY</span></div><b>:</b><div><strong id="hours">--</strong><span>GIỜ</span></div><b>:</b><div><strong id="minutes">--</strong><span>PHÚT</span></div><b>:</b><div><strong id="seconds">--</strong><span>GIÂY</span></div></div><div class="countdown-pending" id="countdown-pending"><span class="small-tag">SẮP CÔNG BỐ HẠN ĐĂNG KÝ</span></div><button class="calendar-link" data-calendar>Thêm vào lịch <span aria-hidden="true">＋</span></button></div>
       </div>
@@ -122,34 +140,46 @@
         <div class="corridor-header text-center">
           <h2 id="corridor-title">Tiềm năng đã hiện hữu.<br><span class="text-lavender">Điều gì sẽ tạo nên bước đột phá tiếp theo?</span></h2>
         </div>
-        <!-- Dòng 2 & Dòng 3: Bố cục 2 cột Trái / Phải -->
+        <!-- Khối bố cục mở: Hoàn toàn không viền, không nền thẻ -->
         <div class="corridor-grid">
-          <!-- Dòng 2: Trái -->
-          <div class="corridor-cell corridor-cell-left">
-            <p>Miền Trung sở hữu những lợi thế chiến lược về vị trí địa lý, hạ tầng cảng biển, công nghiệp, du lịch và hệ sinh thái doanh nghiệp địa phương.</p>
+          <!-- Cột trái: Phân tích góc nhìn chiến lược -->
+          <div class="corridor-column-left">
+            <p class="corridor-lead">
+              <span class="corridor-dropcap">M</span>iền Trung sở hữu những lợi thế chiến lược về vị trí địa lý, hạ tầng cảng biển, công nghiệp, du lịch và hệ sinh thái doanh&nbsp;nghiệp&nbsp;địa&nbsp;phương.
+            </p>
+
+            <p class="corridor-quote">“Nhưng tiềm năng không tự chuyển hóa thành tăng&nbsp;trưởng.”</p>
+
+            <p class="corridor-analysis">
+              Một nền tảng hạ tầng hoàn chỉnh và vị thế trung chuyển địa kinh tế chỉ là điều kiện cần. Khoảng cách giữa tiềm năng tĩnh và sức mạnh tăng trưởng động lực đòi hỏi các chất xúc tác mang tầm vĩ mô và nguồn lực tái phân bổ quyết&nbsp;liệt.
+            </p>
           </div>
-          <!-- Dòng 2: Phải -->
-          <div class="corridor-cell corridor-cell-right">
-            <p>Nhưng tiềm năng không tự chuyển hóa thành tăng trưởng.</p>
-          </div>
-          <!-- Dòng 3: Trái -->
-          <div class="corridor-cell corridor-cell-left">
-            <p>Để bứt phá, doanh nghiệp cần nhiều hơn nguồn vốn: đó là công nghệ, năng lực quản trị, thị trường và những đối tác chiến lược phù hợp.</p>
-          </div>
-          <!-- Dòng 3: Phải -->
-          <div class="corridor-cell corridor-cell-right">
-            <p>M&A mở ra một hướng tiếp cận để kết nối những nguồn lực ấy, tái cấu trúc doanh nghiệp và tạo nên giá trị tăng trưởng mới.</p>
+
+          <!-- Cột phải: 2 Trục định vị & giải pháp -->
+          <div class="corridor-pillars">
+            <div class="corridor-pillar-item">
+              <h3 class="corridor-pillar-title">Vượt lên giới hạn của nguồn vốn</h3>
+              <p class="corridor-pillar-desc">
+                Để bứt phá, doanh nghiệp cần nhiều hơn nguồn vốn: đó là công nghệ, năng lực quản trị, thị trường và những đối tác chiến lược phù&nbsp;hợp.
+              </p>
+            </div>
+
+            <div class="corridor-pillar-item">
+              <h3 class="corridor-pillar-title">Động lực chuyển dịch thông qua M<span class="normal-amp">&amp;</span>A</h3>
+              <p class="corridor-pillar-desc">
+                M<span class="normal-amp">&amp;</span>A mở ra một hướng tiếp cận để kết nối những nguồn lực ấy, tái cấu trúc doanh nghiệp và tạo nên giá trị tăng trưởng&nbsp;mới.
+              </p>
+            </div>
           </div>
         </div>
         <!-- Dòng 4: Nằm chính giữa -->
         <div class="corridor-footer text-center">
-          <p>Đây chính là tinh thần của Diễn đàn M&A Miền Trung 2026.</p>
+          <p>Đây chính là tinh thần của <em>Diễn đàn M<span class="normal-amp">&amp;</span>A Miền Trung 2026.</em></p>
         </div>
       </div>
     </section>
 
-    
-    <section class="content-section topics section-pad reference-layout" id="noi-dung" aria-labelledby="topics-title">
+<section class="content-section topics section-pad reference-layout" id="noi-dung" aria-labelledby="topics-title">
       <div class="wrap">
         <div class="section-heading"><h2 id="topics-title">Không chỉ là dòng vốn.<br><span class="text-lavender">Đó là cơ hội chuyển mình.</span></h2></div>
         <div class="topic-grid">
@@ -167,23 +197,39 @@
         <p>Diễn đàn quy tụ cộng đồng doanh nghiệp, nhà đầu tư, tổ chức tài chính và chuyên gia M&A để cùng thảo luận những câu hỏi quan trọng.</p>
       </div>
       <div class="audience-grid">
-        <article>
-          <div class="audience-card-heading"><span class="audience-card-number" aria-hidden="true">01</span><span class="micro">XU HƯỚNG DÒNG VỐN</span></div>
-          <h3>Dòng vốn và cơ hội M&A đang dịch chuyển theo hướng nào?</h3>
+        <article class="audience-card">
+          <div class="audience-card-body">
+            <span class="micro">XU HƯỚNG DÒNG VỐN</span>
+            <h3>Dòng vốn và cơ hội M<span class="normal-amp">&amp;</span>A đang dịch chuyển theo hướng nào?</h3>
+          </div>
+          <span class="audience-card-number" aria-hidden="true">01</span>
         </article>
-        <article>
-          <div class="audience-card-heading"><span class="audience-card-number" aria-hidden="true">02</span><span class="micro">NĂNG LỰC DOANH NGHIỆP</span></div>
-          <h3>Doanh nghiệp Miền Trung cần chuẩn bị gì để tiếp cận nhà đầu tư và mở rộng quy mô?</h3>
+
+        <article class="audience-card">
+          <div class="audience-card-body">
+            <span class="micro">NĂNG LỰC DOANH NGHIỆP</span>
+            <h3>Doanh nghiệp Miền Trung cần chuẩn bị gì để tiếp cận nhà đầu tư và mở rộng quy mô?</h3>
+          </div>
+          <span class="audience-card-number" aria-hidden="true">02</span>
         </article>
-        <article>
-          <div class="audience-card-heading"><span class="audience-card-number" aria-hidden="true">03</span><span class="micro">TRIỂN KHAI THỰC THI</span></div>
-          <h3>Những yếu tố nào quyết định khả năng triển khai thành công một thương vụ?</h3>
+
+        <article class="audience-card">
+          <div class="audience-card-body">
+            <span class="micro">TRIỂN KHAI THỰC THI</span>
+            <h3>Những yếu tố nào quyết định khả năng triển khai thành công một thương vụ?</h3>
+          </div>
+          <span class="audience-card-number" aria-hidden="true">03</span>
         </article>
-        <article>
-          <div class="audience-card-heading"><span class="audience-card-number" aria-hidden="true">04</span><span class="micro">ĐỘNG LỰC TĂNG TRƯỞNG</span></div>
-          <h3>Đâu là những ngành và động lực có thể dẫn dắt chu kỳ tăng trưởng tiếp theo?</h3>
+
+        <article class="audience-card">
+          <div class="audience-card-body">
+            <span class="micro">ĐỘNG LỰC TĂNG TRƯỞNG</span>
+            <h3>Đâu là những ngành và động lực có thể dẫn dắt chu kỳ tăng trưởng tiếp theo?</h3>
+          </div>
+          <span class="audience-card-number" aria-hidden="true">04</span>
         </article>
       </div>
+
       <div class="audience-scale-banner">
         <div class="audience-scale-stat">
           <span class="audience-scale-number">300<span class="plus">+</span></span>
@@ -293,7 +339,7 @@
       </div>
     </section>
 
-    <section class="content-section registration section-pad" id="tham-du" aria-labelledby="registration-title"><div class="wrap registration-layout"><div><h2 id="registration-title">Giá vé <br><span class="text-lavender">tham dự sự kiện</span></h2><p>Diễn đàn M&A Miền Trung 2026<br>Khơi thông nguồn lực — Kiến tạo tăng trưởng mới.</p><div class="registration-event"><span>13.12.2026</span><span>13:30 — 17:30</span><span>ĐÀ NẴNG</span></div></div><div class="ticket-panel"><div class="ticket-heading"><span class="micro">THÔNG TIN THAM DỰ</span><span class="ticket-mark action-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></div><h3 id="ticket-price">Sắp công bố</h3><p id="ticket-note">Giá vé và quyền lợi tham dự sẽ được Ban Tổ chức công bố.</p><div class="ticket-rule"></div><p class="ticket-location">Đà Nẵng, Việt Nam<br><small id="venue-note">Địa điểm cụ thể sẽ được cập nhật.</small></p><button class="ticket-calendar" data-calendar>Lưu sự kiện vào lịch <span aria-hidden="true">＋</span></button><p class="ticket-fineprint" id="registration-pending">Kênh đăng ký chính thức đang được cập nhật.</p></div></div></section>
+    <section class="content-section registration section-pad" id="tham-du" aria-labelledby="registration-title"><div class="wrap registration-layout"><div><h2 id="registration-title">Giá vé <br><span class="text-lavender">tham dự sự kiện</span></h2><p>Diễn đàn M&A Miền Trung 2026<br>Khơi thông nguồn lực — Kiến tạo tăng trưởng&nbsp;mới.</p><div class="registration-event"><span>13.12.2026</span><span>13:30 — 17:30</span><span>ĐÀ NẴNG</span></div></div><div class="ticket-panel"><div class="ticket-heading"><span class="micro">THÔNG TIN THAM DỰ</span><span class="ticket-mark action-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></div><h3 id="ticket-price">Sắp công bố</h3><p id="ticket-note">Giá vé và quyền lợi tham dự sẽ được Ban Tổ chức công bố.</p><div class="ticket-rule"></div><p class="ticket-location">Đà Nẵng, Việt Nam<br><small id="venue-note">Địa điểm cụ thể sẽ được cập nhật.</small></p><button class="ticket-calendar" data-calendar>Lưu sự kiện vào lịch <span aria-hidden="true">＋</span></button><p class="ticket-fineprint" id="registration-pending">Kênh đăng ký chính thức đang được cập nhật.</p></div></div></section>
 
     <section class="content-section faq-section" id="thong-tin" aria-labelledby="faq-title">
       <div class="wrap faq-layout">
